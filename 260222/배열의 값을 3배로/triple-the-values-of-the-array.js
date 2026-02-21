@@ -1,7 +1,7 @@
 const fs = require('fs');
 let input = fs.readFileSync(0).toString().trim().split('\n');
 
-const arr = input.map(input => input.split(' ').map(Number));
+const arr = input.map(line => line.split(' ').map(Number));
 
 for (let i = 0; i < 3; i++) {
   for (let j = 0; j < 3; j++) {

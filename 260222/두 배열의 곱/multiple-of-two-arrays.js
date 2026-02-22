@@ -1,5 +1,6 @@
 /**
  * 풀이 1
+ * Time: 72ms, Memory: 10MB, Status: Passed - Codetree
 const fs = require('fs');
 let input = fs.readFileSync(0).toString().trim().split('\n\n');
 const arr1 = input[0].split('\n');
@@ -38,7 +39,10 @@ for (let i = 0; i < n; i++) {
 }
 */
 
-// 풀이 2
+/**
+ * 풀이 2
+ * Time: 65ms, Memory: 10MB, Status: Passed - Codetree
+ */
 const fs = require('fs');
 let input = fs.readFileSync(0).toString().trim();
 const [block1, block2] = input.split('\n\n');

@@ -1,3 +1,5 @@
+/**
+ * 풀이 1
 const fs = require('fs');
 let input = fs.readFileSync(0).toString().trim().split('\n\n');
 const arr1 = input[0].split('\n');
@@ -33,4 +35,23 @@ for (let i = 0; i < n; i++) {
 
 for (let i = 0; i < n; i++) {
     console.log(result[i].join(' '));
+}
+*/
+
+// 풀이 2
+const fs = require('fs');
+let input = fs.readFileSync(0).toString().trim();
+const [block1, block2] = input.split('\n\n');
+
+const arr1 = block1.split('\n').map(line => line.split(' ').map(Number));
+const arr2 = block2.split('\n').map(line => line.split(' ').map(Number));
+
+for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    arr1[i][j] *= arr2[i][j];
+  }
+}
+
+for (let i = 0; i < 3; i++) {
+  console.log(arr1[i].join(' '));
 }

@@ -7,7 +7,6 @@ let remain = [];
 
 while (a > 1) {
     remain.push(Math.floor(a % b));
-    console.log(a % b)
     a = Math.floor(a / b);
 }
 

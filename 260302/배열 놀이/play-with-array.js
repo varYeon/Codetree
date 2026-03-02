@@ -18,7 +18,7 @@ for (let i = 2; i < 2 + q; i++) {
 
     else if (qArr[0] === 2) {
         const b = qArr[1];
-        let found = false;
+        let found = true;
 
         for (let j = 0; j < n; j++) {
             if (nArr[j] === b) {
@@ -26,8 +26,8 @@ for (let i = 2; i < 2 + q; i++) {
                 found = true;
                 break;
             }
-            if (!found) console.log(0);
         }
+        if (!found) console.log(0);
     }
 
     else if (qArr[0] === 3) {

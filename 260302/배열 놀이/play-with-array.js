@@ -18,7 +18,7 @@ for (let i = 2; i < 2 + q; i++) {
 
     else if (qArr[0] === 2) {
         const b = qArr[1];
-        let found = true;
+        let found = false;
 
         for (let j = 0; j < n; j++) {
             if (nArr[j] === b) {

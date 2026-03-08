@@ -1,22 +1,12 @@
 const fs = require('fs');
 let nums = fs.readFileSync(0).toString().trim().split(' ').map(Number);
 
-let maxUnder = -Infinity;
-let minOver  = Infinity;
+let big = 1;
+let small  = 1000;
 
-for (let i = 0; i < nums.length; i++) {
-  const x = nums[i];
-
-  if (x < 500 && x > maxUnder) {
-    maxUnder = x;
-  }
-
-  if (x > 500 && x < minOver) {
-    minOver = x;
-  }
+for (let i = 0; i < 10; i++) {
+  if (nums[i] < 500 && nums[i] > big) big = nums[i];
+  if (nums[i] > 500 && nums[i] < small) small = nums[i];
 }
-
-const big = maxUnder;
-const small = minOver;
 
 console.log(big, small);

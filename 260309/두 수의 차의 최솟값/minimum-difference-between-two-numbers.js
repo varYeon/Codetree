@@ -9,7 +9,7 @@ let minDivide = 10000;
 for (let i = 0; i < all; i++) {
     const a = nums[i];
 
-    for (let j = 1; j < all - 1; j++) {
+    for (let j = 1; j < all; j++) {
         const b = nums[j];
 
         const divide = Math.abs(a - b);

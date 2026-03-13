@@ -34,6 +34,6 @@ for (let j = n - 1; j >= 0; j--) {
     }
 }
 
-for (let i = 0; i < n; i++) {
+for (let i = n - 1; i >= 0; i--) {
     console.log(result[i].join(' '));
-} 
+}

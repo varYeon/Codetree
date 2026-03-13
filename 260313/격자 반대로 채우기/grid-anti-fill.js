@@ -18,8 +18,8 @@ for (let i = 0; i< n; i++) {
 // 열이 홀수일 때 -> 31 21 11 01, 33 23 13 03
 
 // 값 넣기
-for (let j = 0; j < n; j++) {
-    if (j % 2 === 0) {
+for (let j = n-1; j >= 0; j--) {
+    if (j % 2 !== 0) {
         for (let i = 0; i < n; i++) {
             result[i][j] = num;
             num += 1;

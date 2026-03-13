@@ -34,6 +34,13 @@ for (let j = n - 1; j >= 0; j--) {
     }
 }
 
-for (let i = n - 1; i >= 0; i--) {
-    console.log(result[i].join(' '));
+// 출력
+if (n % 2 === 0) {
+    for (let i = 0; i < n; i++) {
+        console.log(result[i].join(' '));
+    }
+} else {
+    for (let i = n - 1; i >= 0; i--) {
+        console.log(result[i].join(' '));
+    }
 }

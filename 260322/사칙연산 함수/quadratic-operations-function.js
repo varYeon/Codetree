@@ -21,7 +21,7 @@ function multiply(a, c) {
 }
 
 function divide(a, c) {
-    const result = a / c;
+    const result = Math.floor(a / c);
     return `${a} / ${c} = ${result}`
 }
 

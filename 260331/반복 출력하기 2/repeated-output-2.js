@@ -10,4 +10,4 @@ function Recursive(n) {
     console.log('HelloWorld');
 }
 
-Recursive(n - 1);
+Recursive(n);

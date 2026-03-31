@@ -6,29 +6,17 @@ const n = Number(input[0]);
 function increase(n) {
     if (n === 0) return;
 
-    const result = [];
-
     increase(n - 1);
-
-    for (let i = 0; i < n; i++) {
-        result.push(i);
-    }
-
-    console.log(result.join(' '))
+    process.stdout.write(n.toString() + " ");
 }
 
 function decrease(n) {
     if (n === 0) return;
 
-    const result = [];
-
+    process.stdout.write(n.toString() + " ");
     decrease(n - 1);
-
-    for (let i = n; i > 0; i--) {
-         result.push(i);
-    }
-    
 }
 
 increase(n);
-decrease(n) 
+console.log()
+decrease(n);

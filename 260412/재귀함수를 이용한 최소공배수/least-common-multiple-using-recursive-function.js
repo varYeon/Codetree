@@ -30,12 +30,12 @@ const getLCM = (a, b) => {
     return (a * b) / getGCD(a, b);
 };
 
-function LCM(n, arr, idx = 1) {
-    if (idx === n - 1) {
-        return arr[idx];
+function LCM(n, arr, idx = 1, acc = arr[0]) {
+    if (idx === n) {
+        return acc;
     }
 
-    return getLCM(arr[idx], LCM(arr, idx + 1));
+    return LCM(n, arr, idx + 1, getLCM(acc, arr[idx]));
 
     // return numbers.reduce((acc, cur) => getLCM(acc, cur), numbers[0]);
 }

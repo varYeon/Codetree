@@ -3,5 +3,5 @@ const input = fs.readFileSync(0).toString().trim().split('\n');
 const [n, k] = input[0].split(' ').map(Number);
 const nums = input[1].trim().split(' ').map(Number);
 
-const sortNums = nums.sort();
+const sortNums = nums.sort((a, b) => a - b);
 console.log(sortNums[k - 1]);

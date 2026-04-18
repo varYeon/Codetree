@@ -14,7 +14,7 @@ class Forecast {
 
 const forecasts = forecastsLines.map(([date, dayOfWeek, weather]) => {
   return new Forecast(date, dayOfWeek, weather);
-});
+}).sort((a, b) => a.date.localeCompare(b.date));
 /*
 [
   Forecast { date: '2036-12-27', dayOfWeek: 'Sun', weather: 'Snow' },

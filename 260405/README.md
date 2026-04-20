@@ -4,7 +4,7 @@
 
 | 총 문제 수 | 획득 경험치 | 연속 학습일 |
 |---|---|---|
-| 2 | 20 XP | 1 |
+| 3 | 30 XP | 1 |
 
 ## Trail 학습
 
@@ -12,6 +12,7 @@
 |---|---|---|---|
 | Trail 2 / 재귀함수 / 값을 반환하는 재귀함수 | [[개념]재귀함수를 이용한 피보나치 수](https://www.codetree.ai/trails/complete/curated-cards/intro-fibonacci-using-recursive-function) | 쉬움 | 10 XP |
 | Trail 2 / 재귀함수 / 값을 반환하는 재귀함수 | [[개념]출력결과 9](https://www.codetree.ai/trails/complete/curated-cards/intro-reading-k201529) | 쉬움 | 10 XP |
+| Trail 2 / 재귀함수 / 값을 반환하는 재귀함수 | [[개념]1이 되는 순간까지](https://www.codetree.ai/ko/trails/complete/curated-cards/intro-until-the-moment-I-reach-one/introduction) | 쉬움 | 10 XP |
 
 <br />
 

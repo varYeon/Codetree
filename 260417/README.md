@@ -4,12 +4,13 @@
 
 | 총 문제 수 | 획득 경험치 | 연속 학습일 |
 |---|---|---|
-| 3 | 40 XP | 13 |
+| 4 | 50 XP | 13 |
 
 ## Trail 학습
 
 | 커리큘럼 | 문제 | 난이도 | 경험치 |
 |---|---|---|---|
+| Trail 2 / 정렬 / 객체 | [[개념]007](https://www.codetree.ai/ko/trails/complete/curated-cards/intro-007/introduction) | 쉬움 | 10 XP |
 | Trail 2 / 정렬 / 객체 | [[개념]Next Level](https://www.codetree.ai/trails/complete/curated-cards/intro-next-level) | 쉬움 | 10 XP |
 | Trail 2 / 정렬 / 객체 | [[개념]코드네임](https://www.codetree.ai/trails/complete/curated-cards/intro-code-name) | 쉬움 | 20 XP |
 | Trail 2 / 정렬 / 객체 | [[챌린지]폭탄 해제](https://www.codetree.ai/trails/complete/curated-cards/challenge-bomb-removal) | 쉬움 | 10 XP |

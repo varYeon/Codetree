@@ -4,7 +4,7 @@
 
 | 총 문제 수 | 획득 경험치 | 연속 학습일 |
 |---|---|---|
-| 2 | 40 XP | 4 |
+| 3 | 50 XP | 4 |
 
 ## Trail 학습
 
@@ -12,6 +12,7 @@
 |---|---|---|---|
 | Trail 2 / 재귀함수 / 값을 반환하는 재귀함수 | [[챌린지]큰 수 자리수의 합](https://www.codetree.ai/trails/complete/curated-cards/challenge-sum-of-large-numeric-digits) | 쉬움 | 10 XP |
 | Trail 2 / 재귀함수 / 값을 반환하는 재귀함수 | [[챌린지]출력결과 28](https://www.codetree.ai/trails/complete/curated-cards/challenge-reading-k201629) | 보통 | 30 XP |
+| Trail 2 / 재귀함수 / 값을 반환하는 재귀함수 | [[챌린지]출력결과 19](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-reading-k201542/description) | 쉬움 | 10 XP |
 
 <br />
 

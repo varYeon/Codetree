@@ -4,13 +4,14 @@
 
 | 총 문제 수 | 획득 경험치 | 연속 학습일 |
 |---|---|---|
-| 1 | 50 XP | 6 |
+| 2 | 80 XP | 6 |
 
 ## Trail 학습
 
 | 커리큘럼 | 문제 | 난이도 | 경험치 |
 |---|---|---|---|
 | Trail 2 / 재귀함수 / 값을 반환하는 재귀함수 | [[챌린지]출력결과 27](https://www.codetree.ai/trails/complete/curated-cards/challenge-reading-k201628) | 어려움 | 50 XP |
+| Trail 2 / 재귀함수 / 값을 반환하는 재귀함수 | [[챌린지]출력결과 29](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-reading-k201631/description) | 어려움 | 30 XP |
 
 <br />
 

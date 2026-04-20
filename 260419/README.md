@@ -4,7 +4,7 @@
 
 | 총 문제 수 | 획득 경험치 | 연속 학습일 |
 |---|---|---|
-| 2 | 20 XP | 15 |
+| 3 | 30 XP | 15 |
 
 ## Trail 학습
 
@@ -12,6 +12,7 @@
 |---|---|---|---|
 | Trail 2 / 정렬 / 객체 정렬 | [[개념]국영수 순이지](https://www.codetree.ai/trails/complete/curated-cards/intro-korean-english-math-order) | 쉬움 | 10 XP |
 | Trail 2 / 정렬 / 객체 정렬 | [[개념]총점 비교](https://www.codetree.ai/trails/complete/curated-cards/intro-compare-total-points) | 쉬움 | 10 XP |
+| Trail 2 / 정렬 / 객체 정렬 | [[개념]키를 기준으로 정렬]((https://www.codetree.ai/ko/trails/complete/curated-cards/intro-sort-by-height/introduction)) | 쉬움 | 10 XP |
 
 <br />
 

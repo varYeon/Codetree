@@ -4,7 +4,7 @@
 
 | 총 문제 수 | 획득 경험치 | 연속 학습일 |
 |---|---|---|
-| 2 | 40 XP | 9 |
+| 3 | 50 XP | 9 |
 
 ## Trail 학습
 
@@ -12,6 +12,7 @@
 |---|---|---|---|
 | Trail 2 / 정렬 / 일반 정렬 | [[개념]문자열 정렬](https://www.codetree.ai/trails/complete/curated-cards/intro-string-sort) | 쉬움 | 10 XP |
 | Trail 2 / 정렬 / 일반 정렬 | [[챌린지]두 개의 동일한 수열](https://www.codetree.ai/trails/complete/curated-cards/challenge-two-equal-series) | 보통 | 30 XP |
+| Trail 2 / 정렬 / 일반 정렬 | [[개념]오름 내림차순 정렬](https://www.codetree.ai/ko/trails/complete/curated-cards/intro-inc-dec-sorting/introductions) | 쉬움 | 10 XP |
 
 <br />
 

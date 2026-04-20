@@ -4,7 +4,7 @@
 
 | 총 문제 수 | 획득 경험치 | 연속 학습일 |
 |---|---|---|
-| 2 | 30 XP | 16 |
+| 3 | 50 XP | 16 |
 
 ## Trail 학습
 
@@ -12,6 +12,7 @@
 |---|---|---|---|
 | Trail 2 / 정렬 / 객체 정렬 | [[챌린지]개인정보](https://www.codetree.ai/trails/complete/curated-cards/challenge-personal-info) | 쉬움 | 20 XP |
 | Trail 2 / 정렬 / 객체 정렬 | [[챌린지]키, 몸무게를 기준으로 정렬](https://www.codetree.ai/trails/complete/curated-cards/challenge-sort-by-height-and-weight) | 쉬움 | 10 XP |
+| Trail 2 / 정렬 / 객체 정렬 | [[개념]줄 세우기](https://www.codetree.ai/ko/trails/complete/curated-cards/intro-line-up-students/introduction) | 쉬움 | 20 XP |
 
 <br />
 

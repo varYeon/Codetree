@@ -4,7 +4,7 @@
 
 | 총 문제 수 | 획득 경험치 | 연속 학습일 |
 |---|---|---|
-| 2 | 50 XP | 14 |
+| 3 | 60 XP | 14 |
 
 ## Trail 학습
 
@@ -12,6 +12,7 @@
 |---|---|---|---|
 | Trail 2 / 정렬 / 객체 | [[챌린지]사는 지역](https://www.codetree.ai/trails/complete/curated-cards/challenge-where-live) | 쉬움 | 20 XP |
 | Trail 2 / 정렬 / 객체 | [[테스트]비오는 날](https://www.codetree.ai/trails/complete/curated-cards/test-rainy-day) | 쉬움 | 30 XP |
+| Trail 2 / 정렬 / 객체 | [[챌린지]상품 코드](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-product-code/description) | 쉬움 | 10 XP |
 
 <br />
 

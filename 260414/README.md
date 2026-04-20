@@ -4,7 +4,7 @@
 
 | 총 문제 수 | 획득 경험치 | 연속 학습일 |
 |---|---|---|
-| 2 | 40 XP | 10 |
+| 3 | 50 XP | 10 |
 
 ## Trail 학습
 
@@ -12,6 +12,7 @@
 |---|---|---|---|
 | Trail 2 / 정렬 / 일반 정렬 | [[챌린지]Top K 숫자 구하기](https://www.codetree.ai/trails/complete/curated-cards/challenge-kth-number) | 쉬움 | 10 XP |
 | Trail 2 / 정렬 / 일반 정렬 | [[챌린지]2개씩 그룹짓기](https://www.codetree.ai/trails/complete/curated-cards/challenge-group-of-pairs) | 보통 | 30 XP |
+| Trail 2 / 정렬 / 일반 정렬 | [[기본]단어 정렬](https://www.codetree.ai/ko/trails/complete/curated-cards/intro-sorting-words/introduction) | 쉬움 | 10 XP |
 
 <br />
 

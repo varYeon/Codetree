@@ -18,19 +18,11 @@ for (let i = 0; i < 5; i++) {
 ]
  */
 
-function formatWeight(weight) {
-  if (Number.isInteger(weight)) { // 정수 여부 판결 메서드
-    return weight.toFixed(0);
-    // 주의 : toFixed는 항상 문자열을 반환
-  }
-  return weight.toFixed(1);
-}
-
 const nameArray = students.sort((a, b) => a.name.localeCompare(b.name)).map(student =>
-  `${student.name} ${student.height} ${formatWeight(student.weight)}`
+  `${student.name} ${student.height} ${student.weight.toFixed(1)}`
 );
 const heightArray = students.sort((a, b) => b.height - a.height).map(student =>
-  `${student.name} ${student.height} ${formatWeight(student.weight)}`
+  `${student.name} ${student.height} ${student.weight.toFixed(1)}`
 );;
 
 console.log('name');

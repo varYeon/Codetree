@@ -30,4 +30,4 @@ const base = (11 * 24 * 60) + (11 * 60) + 11;
 const target = (A * 24 * 60) + (B * 60) + C;
 const diff = target - base;
 
-console.log(diff);
+console.log(diff < 0 ? -1 : diff);

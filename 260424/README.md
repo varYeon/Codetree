@@ -4,7 +4,7 @@
 
 | 총 문제 수 | 획득 경험치 | 연속 학습일 |
 |---|---|---|
-| 2 | 60 XP | 20 |
+| 3 | 70 XP | 20 |
 
 ## Trail 학습
 
@@ -12,6 +12,7 @@
 |---|---|---|---|
 | Trail 2 / 시뮬레이션 I / 날짜와 시간 계산 | [[개념]Date to Date](https://www.codetree.ai/trails/complete/curated-cards/intro-date-to-date) | 보통 | 30 XP |
 | Trail 2 / 시뮬레이션 I / 날짜와 시간 계산 | [[챌린지]DateTime to DateTime](https://www.codetree.ai/trails/complete/curated-cards/challenge-datetime-to-datetime) | 보통 | 30 XP |
+| Trail 2 / 시뮬레이션 I / 날짜와 시간 계산 | [[개념]Time to Time](https://www.codetree.ai/ko/trails/complete/curated-cards/intro-time-to-time/introduction) | 보통 | 10 XP |
 
 <br />
 

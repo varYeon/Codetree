@@ -5,7 +5,7 @@ const [m1, d1, m2, d2] = input[0].split(' ').map(Number);
 const num_of_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 const day_of_week = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
-/* 일방향
+/* 1차 시도 : 일방향
 let month = m1;
 let days = d1;
 let index = 0; // 요일
@@ -28,6 +28,7 @@ while (true) {
 */
 
 /**
+ * 2차 시도 :
  * 두 날짜의 1/1과의 차이를 구하고
  * 그 값을 빼서 두 날짜 사이의 차이를 구함
  * 두 날짜의 차이를 직접적으로 구하려면 앞선 날짜 찾기(+/- 인지 몰라서) 등 로직이 복잡
@@ -55,8 +56,6 @@ function distance(month, day) {
 const base = distance(m1, d1);
 const target = distance(m2, d2);
 const diff = target - base;
+const idx = diff < 0 ? 7 - Math.abs(diff % 7) : diff % 7;
 
-// console.log(base)
-// console.log(target)
-// console.log(diff)
-console.log(day_of_week[diff % 7])
+console.log(day_of_week[idx])

@@ -4,12 +4,13 @@
 
 | 총 문제 수 | 획득 경험치 | 연속 학습일 |
 |---|---|---|
-| 2 | 40 XP | 24 |
+| 3 | 50 XP | 24 |
 
 ## Trail 학습
 
 | 커리큘럼 | 문제 | 난이도 | 경험치 |
 |---|---|---|---|
+| Trail 2 / 시뮬레이션 I / Notation | [[챌린지]여러가지 진수변환](https://www.codetree.ai/ko/trails/complete/curated-cards/challenge-various-numeral-system-transformations/description) | 쉬움 | 10 XP |
 | Trail 2 / 시뮬레이션 I / Notation | [[챌린지]십진수와 이진수 2](https://www.codetree.ai/trails/complete/curated-cards/challenge-decimal-and-binary-number-2) | 쉬움 | 10 XP |
 | Trail 2 / 시뮬레이션 I / Notation | [[테스트]진수 to 진수](https://www.codetree.ai/trails/complete/curated-cards/test-transformation-of-number-system) | 쉬움 | 30 XP |
 

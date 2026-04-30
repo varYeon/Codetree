@@ -9,7 +9,10 @@ for (let i = 1; i <= n; i++) {
 
 // 좌표 최댓값
 let maxCoord = 0;
-for (const [s, e] of segments) {
+for (let i = 0; i < segments.length; i++) {
+  const s = segments[i][0];
+  const e = segments[i][1];
+
   if (e > maxCoord) maxCoord = e;
 }
 
@@ -19,7 +22,8 @@ for (let i = 0; i < n; i++) {
   const start = segments[i][0];
   const end = segments[i][1];
 
-  for (let j = start; j <= end; j++) {
+  for (let j = start; j < end; j++) {
+    // 구간 [start, end), end는 포함x
     checked[j] += 1;
   }
 }

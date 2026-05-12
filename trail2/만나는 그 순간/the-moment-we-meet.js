@@ -22,12 +22,21 @@ for (let i = 0; i < m; i++) {
  * 
  * << 해결 >>
  * 1. 0이 아닌 다른 값으로 넣음 -> X, 어쨌든 같게 되는건 똑같음
- * 2. length를 커스텀, 처음부터 배열을 초에 맞춰 만듦
+ * 2. length를 커스텀, 처음부터 배열을 초에 맞춰 만듦 -> <<시도>>
  * 3. 비교를 최소 길이까지만 진행, maxTime 구문 오류 -> 수정
  */
 
 // 시간 배열 : idx = sec, value = location
-const length = 1000;
+let totalTimeA = 0;
+for (let i = 0; i < n; i++) {
+    totalTimeA += movesA[i][1];
+}
+let totalTimeB = 0;
+for (let i = 0; i < m; i++) {
+    totalTimeB += movesB[i][1];
+}
+
+const length = totalTimeA > totalTimeB ? totalTimeA : totalTimeB;
 const roadA = Array(length).fill(0);
 const roadB = Array(length).fill(0);
 
@@ -67,9 +76,9 @@ for (let i = 0; i < m; i++) {
 
 let result = -1;
 
-let maxTime = timeA > timeB ? timeA : timeB;
+// let maxTime = timeA > timeB ? timeA : timeB;
 
-for (let i = 1; i < maxTime; i++) {
+for (let i = 1; i < length; i++) {
     if (roadA[i] === roadB[i]) {
         result = i
         break;

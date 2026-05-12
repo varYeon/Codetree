@@ -22,7 +22,7 @@ for (let i = 0; i < m; i++) {
  * 
  * << 해결 >>
  * 1. 0이 아닌 다른 값으로 넣음 -> X, 어쨌든 같게 되는건 똑같음
- * 2. length를 커스텀, 처음부터 배열을 초에 맞춰 만듦 -> <<시도>>
+ * 2. length를 커스텀, 처음부터 배열을 초에 맞춰 만듦 -> <<시도>> : 큰 메모리 차이 X
  * 3. 비교를 최소 길이까지만 진행, maxTime 구문 오류 -> 수정
  */
 
@@ -37,8 +37,8 @@ for (let i = 0; i < m; i++) {
 }
 
 const length = totalTimeA > totalTimeB ? totalTimeA : totalTimeB;
-const roadA = Array(length).fill(0);
-const roadB = Array(length).fill(0);
+const roadA = Array(length + 1).fill(0); // 1초 부터 시작
+const roadB = Array(length + 1).fill(0);
 
 function move(road, currentLoc, currentTime, direction, distance) {
     let loc = currentLoc;
@@ -78,7 +78,7 @@ let result = -1;
 
 // let maxTime = timeA > timeB ? timeA : timeB;
 
-for (let i = 1; i < length; i++) {
+for (let i = 1; i <= length; i++) {
     if (roadA[i] === roadB[i]) {
         result = i
         break;

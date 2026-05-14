@@ -13,9 +13,8 @@ let posB = Array(totalTime + 1).fill(0);
 let timeA = 1;
 for (let i = 0; i < n; i++) {
     const [v, t] = aData[i];
-    const d = v * t;
     for (let j = 0; j < t; j++) {
-        posA[timeA] = posA[timeA - 1] + d;
+        posA[timeA] = posA[timeA - 1] + v;
         timeA++
     }
 }
@@ -23,9 +22,8 @@ for (let i = 0; i < n; i++) {
 let timeB = 1;
 for (let i = 0; i < m; i++) {
     const [v, t] = bData[i];
-    const d = v * t;
     for (let j = 0; j < t; j++) {
-        posB[timeB] = posB[timeB - 1] + d;
+        posB[timeB] = posB[timeB - 1] + v;
         timeB++;
     }
 }

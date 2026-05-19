@@ -6,10 +6,9 @@ let count = 0;
 
 for (let i = 1; i <= n; i++) {
     str += input[i];
-}
 
-for (let i = 0; i < str.length; i++) {
-    if (str[i] === 'a') count++;
+    if (input[i][0] === 'a') count++;
+
 }
 
 console.log(str.length, count);

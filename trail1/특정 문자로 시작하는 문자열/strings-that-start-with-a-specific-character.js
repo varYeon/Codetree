@@ -19,5 +19,5 @@ for (let i = 0; i < n; i++) {
    }
 }
 
-const avg = Math.floor(sum / count).toFixed(2);
+const avg = (sum / count).toFixed(2);
 console.log(count, avg)

@@ -11,7 +11,7 @@ result[x][y] = 1;
 
 // case 1. 격자 내부
 function inRange(x, y) {
-    return x >= 0 && x < n && y >= 0 && y < n;
+    return x >= 0 && x < n && y >= 0 && y < m;
 }
 
 for (let i = 2; i <= n * m; i++) {

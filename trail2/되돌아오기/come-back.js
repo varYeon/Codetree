@@ -7,6 +7,7 @@ const moves = input.slice(1);
 let x = 0, y = 0;
 let dx = [1, 0, -1, 0], dy = [0, -1, 0, 1];
 let time = 0;
+let isZero = false;
 let isBack = false;
 
 const dirMap = {
@@ -18,8 +19,8 @@ const dirMap = {
 
 for (let i = 0; i < n; i++) {
     let [direction, distance] = moves[i].split(' ');
-    distance = Number(distance); // 3
-    let dirNum = dirMap[direction]; // 'N' -> 3
+    distance = Number(distance);
+    let dirNum = dirMap[direction];
 
     for (let j = 0; j < distance; j++) {
         x += dx[dirNum];
@@ -27,12 +28,15 @@ for (let i = 0; i < n; i++) {
         time++;
 
         if (x === 0 && y === 0) {
+            isZero = true;
             isBack = true;
             break;
         }
     }
 
-    if (isBack) break;
+    if (isZero) break;
 }
+
+if (!isBack) time = -1;
 
 console.log(time);

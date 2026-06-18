@@ -6,14 +6,6 @@ const moves = [];
 for (let i = 1; i <= m; i++) {
     moves.push(input[i].split(" ").map(Number));
 }
-/*
-[
-  [ 1, 2 ], [ 2, 1 ],
-  [ 2, 3 ], [ 2, 2 ],
-  [ 3, 3 ], [ 4, 2 ],
-  [ 3, 2 ], [ 4, 3 ]
-]
-*/
 
 const grid = Array.from(Array(n), () => Array(n).fill(0));
 const dx = [0, 1, 0, -1], dy = [1, 0, -1, 0];
@@ -28,7 +20,7 @@ for (let i = 0; i < m; i++) {
     let [r, c] = moves[i];
     let x = r - 1;
     let y = c - 1;
-    
+
     grid[x][y] = 1;
 
     // 탐색
@@ -43,9 +35,8 @@ for (let i = 0; i < m; i++) {
         }
     }
 
-    if (coloredNeighbors >= 3) relaxState = 1;
+    if (coloredNeighbors === 3) relaxState = 1;
     else relaxState = 0;
 
     console.log(relaxState);
 }
-

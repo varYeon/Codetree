@@ -13,7 +13,7 @@ function inRange(r, c) {
 }
 
 for (let i = 1; i < n * m; i++) {
-   let nx = x + dx[dirNum], ny = y + dy[dirNum];
+    let nx = x + dx[dirNum], ny = y + dy[dirNum];
 
     if (!inRange(nx, ny) || grid[nx][ny] !== 0) {
         dirNum = (dirNum + 1) % 4;
@@ -22,7 +22,7 @@ for (let i = 1; i < n * m; i++) {
     x += dx[dirNum];
     y += dy[dirNum];
 
-   const inAlpha = String.fromCharCode(65 + i) // 'A' = 65
+    const inAlpha = String.fromCharCode(65 + (i % 26)); // 'A' = 65
     grid[x][y] = inAlpha;
 }
 

@@ -9,7 +9,6 @@ const startNum = Number(input[n + 1]);
 let dx = [-1, 0, 1, 0], dy = [0, 1, 0, -1];
 let x, y, dirNum;
 
-// /이게 나오면 방향 수정, \가 나오면 방향 수정 -> 어느 방향
 if (1 <= startNum && startNum <= n) {
     dirNum = 2;
     x = 0;
@@ -44,7 +43,7 @@ while (x >= 0 && x < n && y >= 0 && y < n) {
         else if (dirNum === 1) dirNum = 2;
         else if (dirNum === 2) dirNum = 1;
         else if (dirNum === 3) dirNum = 0;
-        
+
     }
 
     count++;

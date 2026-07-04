@@ -20,13 +20,19 @@ placed = placed.filter((_, idx) => idx <= max);
 // [  0, 1, 0, 2, 1, 0, 0, 1, 0, 0, 2, 0, 0, 0, 0, 0, 2 ] , idx = 0은 필요x
 let maxScore = 0;
 
-for (let i = 1; i <= max - k; i++) {
-    let sum = 0;
-    for (let j = i; j <= i + k; j++) { // 사진 크기 = 양쪽 끝 x값 끼리의 차
-        sum += placed[j];
+if (max <= k) {
+    for (let i = 1; i <= max; i++) {
+        maxScore += placed[i];
     }
+} else {
+    for (let i = 1; i <= max - k; i++) {
+        let sum = 0;
+        for (let j = i; j <= i + k; j++) { // 사진 크기 = 양쪽 끝 x값 끼리의 차
+            sum += placed[j];
+        }
 
-    maxScore = Math.max(maxScore, sum);
+        maxScore = Math.max(maxScore, sum);
+    }
 }
 
 console.log(maxScore);

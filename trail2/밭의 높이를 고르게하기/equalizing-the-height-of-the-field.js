@@ -2,12 +2,11 @@ const fs = require("fs");
 const input = fs.readFileSync(0).toString().trim().split('\n');
 
 const [n, h, t] = input[0].split(' ').map(Number);
-// n번 중 연속 t번 이상 h 높이 -> 최소 비용
 const arr = input[1].split(' ').map(Number);
 
 let min = Number.MAX_SAFE_INTEGER;
 
-for (let i = 0; i < n - t; i++) {
+for (let i = 0; i <= n - t; i++) {
     let price = 0;
 
     // 연속, t번 이상, 높이, 최소 비용

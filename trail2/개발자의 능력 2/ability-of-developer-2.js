@@ -21,6 +21,7 @@ function getDiff(i, j, k, l) {
     return max - min;
 }
 
+// i < j < k < l => X
 for (let i = 0; i < 6; i++) {
     for (let j = i + 1; j < 6; j++) {
         for (let k = 0; k < 6; k++) {

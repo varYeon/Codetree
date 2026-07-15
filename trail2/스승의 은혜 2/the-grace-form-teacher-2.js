@@ -2,7 +2,7 @@ const fs = require("fs");
 const input = fs.readFileSync(0).toString().trim().split('\n');
 
 const [n, b] = input[0].split(' ').map(Number);
-const p = input.slice(1, 1 + n).map(Number).sort((a, b) => a - b);
+const p = input.slice(1, 1 + n).map(Number).sort((a, b) => a - b); // point : 정렬 필요
 
 let maxStud = 0;
 
@@ -16,7 +16,7 @@ for (let i = 0; i < n; i++) {
 
     for (let j = 0; j < n; j++) {
         if (i === j) continue;
-        if (totalPrice <= p[j]) break;
+        if (totalPrice < p[j]) break;
 
         totalPrice -= p[j];
         students += 1;

@@ -5,24 +5,25 @@ const segments = input.slice(1, n + 1).map(line => line.split(' ').map(Number));
 // [ [ -3, 4 ], [ 7, 8 ], [ 10, 16 ], [ 3, 9 ] ]
 
 let cnt = 0;
+const overlapped = new Array(n).fill(false);
 
-for (let i = 0; i < n-1; i++) {
+for (let i = 0; i < n; i++) {
     const [x1_i, x2_i] = segments[i];
-    let overlapped = false;
 
     for (let j = i + 1; j < n; j++) {
         const [x1_j, x2_j] = segments[j];
 
-        if (x1_i < x1_j && x2_i > x2_j) {
-            overlapped = true;
-            continue;
-        } else if (x1_i > x1_j && x2_i < x2_j) {
-            overlapped = true;
+        if ((x1_i < x1_j && x2_i > x2_j) ||
+            (x1_i > x1_j && x2_i < x2_j)) {
+            overlapped[i] = true;
+            overlapped[j] = true;
             continue;
         }
     }
+}
 
-    if (!overlapped) cnt++;
+for (let i = 0; i < n; i++) {
+    if (!overlapped[i]) cnt++;
 }
 
 console.log(cnt);

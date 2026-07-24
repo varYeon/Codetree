@@ -9,22 +9,15 @@ for (let i = 1; i <= n; i++) {
     tb.push(tbValue);
 }
 
-/**
- * 온도 범위 t
- * 1. t < ta -> C
- * 2. ta <= t <= tb -> G
- * 3. t > tb -> H
- */
-
 let maxWork = 0;
 
 function machine(t, ta, tb) {
     if (t < ta) return c;
     else if (ta <= t && tb >= t) return g;
-    else if (t > tb) return h
+    else if (t > tb) return h;
 }
 
-for (let t = 0; t <= 1000; t++) {
+for (let t = -1; t <= 1001; t++) {
     let work = 0;
 
     for (let i = 0; i < n; i++) {

@@ -15,9 +15,20 @@ for (let i = x; i <= y; i++) {
             type.push(num[j]);
         }
     }
-    
-    if (type.length === 2) cnt++;
+
+    if (type.length !== 2) continue;
+    // type.length -> 11188도 2이고, 11118도 2이다
+
+    let firstCnt = 0;
+    for (let i = 0; i <num.length; i++) {
+        if (type[0] === num[i]) firstCnt++;
+    }
+
+    if (firstCnt === 1 || firstCnt === num.length - 1) {
+        cnt++;
+    }
 }
+
 
 
 console.log(cnt);

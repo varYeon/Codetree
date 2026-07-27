@@ -13,11 +13,12 @@ for (let k = 1; k <= 100; k++) {
     let currentCnt = 0;
 
     for (let i = 0; i < n; i++) {
-        aiMk = Math.abs(arr[i] - k);
+        aiMk = Math.abs(k - arr[i]);
         for (let j = i + 1; j < n; j++) {
             ajMk = Math.abs(arr[j] - k);
+            
+            if (ajMk === aiMk) currentCnt++;
         }
-        if (ajMk === aiMk) currentCnt++;
     }
 
     maxCnt = Math.max(maxCnt, currentCnt);

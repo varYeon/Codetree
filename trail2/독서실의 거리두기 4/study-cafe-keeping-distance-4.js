@@ -29,10 +29,10 @@ for (let i = 0; i < n; i++) {
 
         seat[k] = '2';
 
-        let distance = 100;
+        let distance = Math.min(prevMin, Math.abs(k - i));
         for (let j = 0; j < n; j++) {
             if (seat[j] === '1') {
-                distance = Math.min(distance, Math.abs(i - j), Math.abs(k - j), Math.abs(k - i), prevMin)
+                distance = Math.min(distance, Math.abs(i - j), Math.abs(k - j));
             }
         }
 

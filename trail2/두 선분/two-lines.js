@@ -4,14 +4,7 @@ const [x1, x2, x3, x4] = input[0].split(' ').map(Number);
 
 let isOverlap = false;
 
-for (let i = x1; i <= x2; i++) {
-    for (let j = x3; j <= x4; j++) {
-        if (i === j) {
-            isOverlap = true;
-            break;
-        }
-    }
-}
+if (x1 <= x4 && x3 <= x2) isOverlap = true;
 
 if (isOverlap) console.log('intersecting');
 else console.log('nonintersecting');

@@ -9,20 +9,25 @@ for (let i = 1; i <= n; i++) {
     x2List.push(x2);
 } // x1List : [ 1, 4, 7, 2 ], x2List : [ 5, 6, 10, 4 ]
 
-let overlap = false;
+let answer = 'No';
 
 for (let i = 0; i < n; i++) { // 제거할 선분 -> i 선분
-    const x1 = x1List[i], x2 = x2List[i];
+    let right = Number.MAX_SAFE_INTEGER;
+    let left = Number.MIN_SAFE_INTEGER;
 
     for (let j = 0; j < n; j++) {
         if (i === j) continue;
-        const x3 = x1List[j], x4 = x2List[j];
+        right = Math.min(right, x2List[j]);
+        left = Math.max(left, x1List[j]);
+    }
 
-        if (x4 < x1 || x3 > x2) {
-            overlap = true;
-            break;
-        }
+    if (left <= right) { // 공통으로 만나는 점
+        answer = 'Yes';
+        break;
     }
 }
 
-console.log(overlap ? 'Yes' : 'No');
+console.log(answer);
+
+// 이전 문제들처럼 선분이 겹치는지를 모두 확인 하는 것 X
+// 모든 선분들이 지나는 한 점을 찾음 O 

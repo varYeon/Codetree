@@ -1,6 +1,13 @@
 const fs = require("fs");
-let [A, B] = fs.readFileSync(0).toString();
+let [A, B] = fs.readFileSync(0).toString().trim().split(" ");
 
 A = Number(A);
+B = Number(B);
 
-console.log(input, input * 2, input * 3, input * 4, input * 5);
+let str = "";
+
+for (let i = A; i <= B; i++) {
+    if (i % 2 !== 0) str += i + " ";
+}
+
+console.log(str);

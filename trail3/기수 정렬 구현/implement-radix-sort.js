@@ -4,8 +4,18 @@ const input = fs.readFileSync(0).toString().trim().split('\n');
 const n = Number(input[0]);
 let arr = input[1].split(' ').map(Number);
 
+let max = arr[0];
+
+for (let i = 1; i < n; i++) {
+    if (arr[i] > max) {
+        max = arr[i];
+    }
+}
+
+const k = String(max).length;
+
 // 오름차순
-for (let pos = 0; pos < 1; pos++) {
+for (let pos = 0; pos < k; pos++) {
     const arr_new = [];
 
     for (let i = 0; i < 10; i++) {
